@@ -12,9 +12,9 @@ export const CountCats: React.FC = () => {
     <>
       <h2>useState</h2>
       <p>Click on the below button to increment the Cats.</p>
-      <button onClick={incrementCat}>Add Cats</button>
-      <p>There are {countCats} cats 🥳</p>
       {[...Array(countCats)].map(() => "🐈")}
+      <br />
+      <button onClick={incrementCat}>{countCats} Cats</button>
     </>
   );
 };
