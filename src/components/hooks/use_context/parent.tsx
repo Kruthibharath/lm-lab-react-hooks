@@ -38,7 +38,6 @@ export const Parent = () => {
         <Child1 />
         <Child2 />
       </ThemeContext.Provider>
-      ;
     </div>
   );
 };
