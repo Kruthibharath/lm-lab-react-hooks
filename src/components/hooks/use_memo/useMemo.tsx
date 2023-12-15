@@ -6,10 +6,21 @@ export const MemoExample = () => {
   const doubleNumber = useMemo(() => {
     return slowFunction(numberObj.input);
   }, [numberObj.input]);
+  const buttonStyle = {
+    marginRight: "10px",
+  };
   return (
     <>
       <h2>useMemo</h2>
-      <button onClick={() => setNumberObj({ input: 3 })}>Double 3</button>
+      <button style={buttonStyle} onClick={() => setNumberObj({ input: 3 })}>
+        Double 3
+      </button>
+      <button style={buttonStyle} onClick={() => setNumberObj({ input: 5 })}>
+        Double 5
+      </button>
+      <button style={buttonStyle} onClick={() => setNumberObj({ input: 10 })}>
+        Double 10
+      </button>
       <p className="use-memo__text">{doubleNumber}</p>
     </>
   );
