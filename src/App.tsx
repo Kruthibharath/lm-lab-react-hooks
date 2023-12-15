@@ -1,8 +1,8 @@
 import "./App.css";
-//import { Parent } from "./components/hooks/use_context/parent";
-import { APICall } from "./components/hooks/use_effect/use_effect";
+import { Parent } from "./components/hooks/use_context/parent";
+//import { APICall } from "./components/hooks/use_effect/use_effect";
 /*import { MemoExample } from "./components/hooks/use_memo/useMemo";*/
-import { Todo } from "./components/hooks/use_x/todo";
+//import { Todo } from "./components/hooks/use_x/todo";
 /*import { CountRenders } from "./components/hooks/use_ref/count_renders";
 import { Focus } from "./components/hooks/use_ref/focus";
  import { CountCats } from "./components/hooks/use_state/count_cats";
@@ -13,11 +13,11 @@ function App() {
   return (
     <>
       <div className="App">
-        {/*<Section>
-					<Parent />
-				</Section>*/}
-
         <Section>
+          <Parent />
+        </Section>
+
+        {/*<Section>
           <APICall />
         </Section>
 
